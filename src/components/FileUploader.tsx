@@ -37,13 +37,13 @@ export function FileUploader() {
                     disabled={loading}
                     onClick={handleButtonClick}
                     className="w-44"
-                    style={{ marginTop: "20px" }}
+                    style={{ marginTop: "20px", padding: "8px" }}
                 >
                     {loading ? "Extracting..." : "Upload PDF"}
                 </Button>
 
                 <p className="text-xs text-muted-foreground">
-                    Supported: <span className="font-medium">.pdf only</span> (client-side extraction)
+                    Supported: <span className="font-medium">.pdf only</span>
                 </p>
 
                 {error && (
